@@ -34,25 +34,35 @@
   </head>
   <body>
     <nav>
-      <h1>snap</h1>
-      <label for="features">Features</label>
-      <select name="features">
-        <option value="todo-list">Todo List</option>
-        <option value="calendar">Calendar</option>
-        <option value="reminders">Reminders</option>
-        <option value="planning">Planning</option>
-      </select>
+      <div id="navbar-left">
+        <h1 id="brand-name">snap</h1>
+        <div id="dropdowns-container">
+          <label for="features"
+            >Features&nbsp;&nbsp;<img src="./images/icon-arrow-down.svg" />
+          </label>
+          <select name="features" class="hidden">
+            <option value="todo-list">Todo List</option>
+            <option value="calendar">Calendar</option>
+            <option value="reminders">Reminders</option>
+            <option value="planning">Planning</option>
+          </select>
 
-      <label for="company">Company</label>
-      <select name="company">
-        <option value="history">History</option>
-        <option value="our-team">Our Team</option>
-        <option value="blog">Blog</option>
-      </select>
-      <label for="company">About</label>
-
-      <button>Login</button>
-      <button>Register</button>
+          <label for="company"
+            >Company&nbsp;&nbsp;<img src="./images/icon-arrow-down.svg"
+          /></label>
+          <select name="company" class="hidden">
+            <option value="history">History</option>
+            <option value="our-team">Our Team</option>
+            <option value="blog">Blog</option>
+          </select>
+          <label for="careers">Careers</label>
+          <label for="company">About</label>
+        </div>
+      </div>
+      <div id="navbar-right">
+        <button>Login</button>
+        <button style="border: 1.5px solid gray">Register</button>
+      </div>
     </nav>
     <section>
       <div id="section-left">

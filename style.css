@@ -7,11 +7,6 @@ body {
   margin: 0;
 }
 
-nav {
-  background-color: lightyellow;
-  height: 10vh;
-}
-
 section {
   display: flex;
   flex-grow: 1;
@@ -65,7 +60,7 @@ option {
 }
 
 #clients-container > img {
-  margin-right: 40px;
+  margin-right: 30px;
 }
 
 button {
@@ -73,6 +68,9 @@ button {
   font-size: 14px;
   border-radius: 10px;
   border: none;
+
+  background-color: white;
+  color: gray;
 }
 
 .black-bg {
@@ -81,4 +79,46 @@ button {
 
 .white-text {
   color: white;
+}
+
+nav {
+  height: 5vh;
+  /* background-color: lightyellow; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+#navbar-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#brand-name {
+  font-size: 32px;
+  font-weight: 550;
+  display: inline;
+  margin-right: 60px;
+}
+
+#navbar-right {
+}
+
+.hidden {
+   display: none;
+}
+
+.visible {
+    visibility: visible;
+}
+
+label {
+    color: gray;
+    margin-right: 30px;
+}
+
+label img {
+    margin-bottom: 1.5px;
 }
