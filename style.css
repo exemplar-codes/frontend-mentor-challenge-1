@@ -82,7 +82,7 @@ button {
 }
 
 nav {
-  height: 5vh;
+  height: 20vh;
   /* background-color: lightyellow; */
   display: flex;
   justify-content: space-between;
@@ -106,19 +106,49 @@ nav {
 #navbar-right {
 }
 
+#dropdowns-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#dropdowns-container button {
+  font-size: inherit;
+}
 .hidden {
-   display: none;
+  display: none;
 }
 
 .visible {
-    visibility: visible;
+  visibility: visible;
 }
 
 label {
-    color: gray;
-    margin-right: 30px;
+  color: gray;
+  margin-right: 30px;
 }
 
-label img {
-    margin-bottom: 1.5px;
+button img {
+  margin-bottom: 1.5px;
+}
+
+.dropdown-option {
+  position: relative;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-option img {
+  /* position: absolute; */
+  margin: 5px;
+}
+
+.dropdown-options {
+}
+
+dropdown {
+  position: relative;
+  z-index: 2;
 }
